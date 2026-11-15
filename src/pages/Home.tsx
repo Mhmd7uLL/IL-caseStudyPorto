@@ -1,10 +1,20 @@
+import { Link } from "react-router-dom";
 import selfPhoto from "../assets/hero-section/bg-front.webp";
+import siakadu from "../assets/feat-projects/siakadu.jpeg";
+import cegahscam from "../assets/feat-projects/cegahscam.png";
+import sidoharjo from "../assets/feat-projects/sidoharjo-web.png";
+import js from "../assets/icon-tech/javascript.svg";
+import ts from "../assets/icon-tech/typescript.svg";
+import tailcss from "../assets/icon-tech/tailwind.svg";
+import rct from "../assets/icon-tech/react.svg";
+import nodejs from "../assets/icon-tech/node-js.svg";
+import exjs from "../assets/icon-tech/express.svg";
 
 export default function Home() {
   return (
     <main className="w-full bg-[#F5EFE3] pt-15 font-mono">
       <section
-        id="hero-section"
+        id="home"
         className="flex flex-row justify-around px-20 h-156 tracking-widest"
       >
         <div className="w-full flex items-center justify-center">
@@ -23,7 +33,7 @@ export default function Home() {
       </section>
 
       <section
-        id="profile-section"
+        id="about"
         className="grid grid-cols-1 gap-2 px-6 py-10 tracking-normal md:px-10 lg:grid-cols-[1.05fr_1fr_0.9fr] lg:grid-rows-[18rem_9rem] lg:px-20"
       >
         {/* About Me */}
@@ -84,13 +94,164 @@ export default function Home() {
         </article>
       </section>
 
-      <section id="tech-stack" className="grid grid-cols-6 gap-2 bg-[#4F5B2A] h-75 w-full px-20 py-10">
-        <div className="bg-[#F8EADC] rounded-md">javascript</div>
-        <div className="bg-[#F8EADC] rounded-md">typescript</div>
-        <div className="bg-[#F8EADC] rounded-md">react js</div>
-        <div className="bg-[#F8EADC] rounded-md">tailwind css</div>
-        <div className="bg-[#F8EADC] rounded-md">nodejs</div>
-        <div className="bg-[#F8EADC] rounded-md">express js</div>
+      <section id="about" className="bg-[#4F5B2A] h-100 w-full px-20 py-20">
+        <div className="flex flex-col">
+          <h1 className="text-[#B8892D] font-bold">Tech Stacks</h1>
+          <p className="text-[#F5EFE3] text-2xl font-bold">
+            What i use to develop
+          </p>
+        </div>
+        <div className="grid grid-cols-6 gap-2 mt-5">
+          <div className="bg-[#b8892d] p-5 rounded-md group relative overflow-hidden">
+            <img
+              src={js}
+              className="w-20 h-20 mx-auto transition-opacity duration-300 group-hover:opacity-20"
+            />
+
+            <p className="absolute inset-0 flex items-center justify-center font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              JavaScript
+            </p>
+          </div>
+          <div className="bg-[#b8892d] p-5 rounded-md group relative overflow-hidden">
+            <img
+              src={ts}
+              className="w-20 h-20 mx-auto transition-opacity duration-300 group-hover:opacity-20"
+            />
+            <p className="absolute inset-0 flex items-center justify-center font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              TypeScript
+            </p>
+          </div>
+          <div className="bg-[#b8892d] p-5 rounded-md group relative overflow-hidden">
+            <img
+              src={rct}
+              className="w-20 h-20 mx-auto transition-opacity duration-300 group-hover:opacity-20"
+            />
+            <p className="absolute inset-0 flex items-center justify-center font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              React.Js
+            </p>
+          </div>
+          <div className="bg-[#b8892d] p-5 rounded-md group relative overflow-hidden">
+            <img
+              src={tailcss}
+              className="w-20 h-20 mx-auto transition-opacity duration-300 group-hover:opacity-20"
+            />
+            <p className="absolute inset-0 flex items-center justify-center font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Tailwind CSS
+            </p>
+          </div>
+          <div className="bg-[#b8892d] p-5 rounded-md group relative overflow-hidden">
+            <img
+              src={nodejs}
+              className="w-20 h-20 mx-auto transition-opacity duration-300 group-hover:opacity-20"
+            />
+            <p className="absolute inset-0 flex items-center justify-center font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Node.js
+            </p>
+          </div>
+          <div className="bg-[#b8892d] p-5 rounded-md group relative overflow-hidden">
+            <img
+              src={exjs}
+              className="w-20 h-20 mx-auto transition-opacity duration-300 group-hover:opacity-20"
+            />
+            <p className="absolute inset-0 flex items-center justify-center font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Express
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="achievements"
+        className="bg-[#f5efe3] flex flex-row h-100 w-full px-20 py-10 my-10 items-center"
+      >
+        <div className="w-250">
+          <div className="flex flex-col">
+            <h1 className="text-[#B8892D] font-bold">Achievements</h1>
+            <p className="text-[#4f5b2a] text-[50px] font-bold">
+              SOME <span className="text-[#B8892D]">ACHIEVEMENTS</span>
+              <br></br>I GOT SO FAR.
+            </p>
+          </div>
+          <p className="text-xs">
+            Contributed to the competition challenges, whether individual or
+            group competitions
+          </p>
+        </div>
+        <div className="w-full">
+          <div className="border-t-[0.5px] border-b-[0.5px] border-[#B8892D] flex flex-row gap-5 py-5 transition-all duration-300 ease-out hover:ps-10">
+            <div className="text-[#B8892D] font-bold">2025</div>
+            <div>
+              <p className="text-[#4f5b2a] font-bold text-3xl">3rd Place</p>
+              <p>UI/UX Development by INSYFEST - UBP Karawang</p>
+            </div>
+          </div>
+          <div className="border-b-[0.5px] border-[#B8892D] flex flex-row gap-5 py-5 transition-all duration-300 ease-out hover:ps-10">
+            <div className="text-[#B8892D] font-bold">2025</div>
+            <div>
+              <p className="text-[#4f5b2a] font-bold text-3xl">3rd Place</p>
+              <p>Web Development By SLP - UNESA</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="projects"
+        className="bg-[#B8892D] min-h-screen w-full px-20 py-20"
+      >
+        <div className="flex flex-col">
+          <h1 className="text-[#4f5b2a] font-bold">Featured Projects</h1>
+          <p className="text-[#F5EFE3] text-[50px] font-bold">
+            Projects I've created or currently working on.
+          </p>
+        </div>
+        <div className="grid grid-cols-3 gap-2 mt-5">
+          <Link
+            to="/cegahScam"
+            className="group relative w-full overflow-hidden rounded-md"
+          >
+            <img
+              src={cegahscam}
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <span className="text-white text-lg">CegahScam</span>
+            </div>
+          </Link>
+
+          <Link
+            to="/sidoharjo"
+            className="group relative w-full overflow-hidden rounded-md"
+          >
+            <img
+              src={sidoharjo}
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <span className="text-white text-lg">
+                Sidoharjo Website
+              </span>
+            </div>
+          </Link>
+
+          <Link
+            to="/siakadu"
+            className="group relative w-full overflow-hidden rounded-md"
+          >
+            <img
+              src={siakadu}
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <span className="text-white text-lg">Academic System</span>
+            </div>
+          </Link>
+        </div>
+        <Link to="/projects">
+          <p className="w-full text-end mt-5 font-bold text-[#F5efe3] hover:text-[#4f5b2a]">
+            Show more projects
+          </p>
+        </Link>
       </section>
     </main>
   );

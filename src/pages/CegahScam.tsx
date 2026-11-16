@@ -156,7 +156,7 @@ export default function CegahScam() {
         <div className="w-full">
           <p className="text-[#B8892D]">Technologies</p>
           <h1 className="text-3xl font-bold text-[#4f5b2a]">
-            Teknologi yang digunakan<br></br>sebagai media pengembangan.
+            Teknologi yang digunakan<br></br>sebagai alat pengembangan.
           </h1>
           <p className="mt-4 max-w-xl text-[#4f5b2a]/80 leading-relaxed">
             Berbagai teknologi dan tools yang dimanfaatkan<br></br>dalam proses

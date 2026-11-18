@@ -34,58 +34,68 @@ export default function CegahScam() {
 
       <section
         id="desc"
-        className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 w-full min-h-screen px-10 lg:px-20 py-10 tracking-normal"
+        className="min-h-screen px-10 lg:px-20 py-10 tracking-normal"
       >
-        {/* Kolom kiri */}
-        <div className="lg:col-span-5 flex flex-col">
-          <p className="text-[#B8892D]">Project Overview</p>
-          <h1 className="text-3xl font-bold mb-8">3 Fitur Utama.</h1>
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 w-full ">
+          {/* Kolom kiri */}
+          <div className="lg:col-span-5 flex flex-col">
+            <p className="text-[#B8892D]">Project Overview</p>
+            <h1 className="text-3xl font-bold mb-8">3 Fitur Utama.</h1>
 
-          <div className="w-full flex items-center justify-center">
-            <img
-              src={fitur1}
-              alt="Fitur utama CegahScam"
-              className="w-full h-auto object-contain rounded-xl shadow-lg"
-            />
-          </div>
-        </div>
-
-        {/* Kolom kanan */}
-        <div className="lg:col-span-7 flex flex-col gap-6">
-          {/* Dua gambar bagian atas */}
-          <div className="grid grid-cols-2 gap-4 items-start">
-            <img
-              src={fitur2}
-              alt="Fitur CegahScam kedua"
-              className="w-full h-auto object-contain rounded-2xl"
-            />
-
-            <img
-              src={fitur3}
-              alt="Fitur CegahScam ketiga"
-              className="w-full h-auto object-contain rounded-2xl"
-            />
-          </div>
-
-          {/* Deskripsi */}
-          <div className="gap-5 text-sm text-[#4F5B2A]">
-            <div>
-              <h2 className="font-bold text-base mb-2">About CegahScam</h2>
-              <p className="leading-relaxed">
-                CegahScam merupakan platform yang membantu pengguna dalam
-                mengatasi permasalahan terkait scam dan phising. 3 Fitur
-                utamanya yaitu Pelaporan darurat (emergency), analisis
-                mencurigakan dan edukasi terkait tren terbaru
-              </p>
+            <div className="w-full flex items-center justify-center">
+              <img
+                src={fitur1}
+                alt="Fitur utama CegahScam"
+                className="w-full h-auto object-contain rounded-xl shadow-lg"
+              />
             </div>
           </div>
 
-          {/* Kalimat penutup */}
-          <h2 className="text-3xl lg:text-4xl font-semibold leading-tight">
-            Kenali berbagai modus penipuan, pahami indikasinya, dan lindungi
-            dirimu dalam satu platform.
-          </h2>
+          {/* Kolom kanan */}
+          <div className="lg:col-span-7 flex flex-col gap-6">
+            {/* Dua gambar bagian atas */}
+            <div className="grid grid-cols-2 gap-4 items-start">
+              <img
+                src={fitur2}
+                alt="Fitur CegahScam kedua"
+                className="w-full h-auto object-contain rounded-2xl"
+              />
+
+              <img
+                src={fitur3}
+                alt="Fitur CegahScam ketiga"
+                className="w-full h-auto object-contain rounded-2xl"
+              />
+            </div>
+
+            {/* Deskripsi */}
+            <div className="grid lg:grid-cols-3 gap-5 text-sm text-[#4F5B2A]">
+              <div>
+                <h2 className="font-bold text-xl mb-2">Problem</h2>
+                <p className="leading-relaxed">
+                  Panik hebat dan kebingungan saat mengalami penipuan dan phising
+                </p>
+              </div>
+              <div>
+                <h2 className="font-bold text-xl mb-2">Goal</h2>
+                <p className="leading-relaxed">
+                  Memberikan solusi cepat dan tepat dalam jangka waktu singkat saat penipuan dan phising itu dialami
+                </p>
+              </div>
+              <div>
+                <h2 className="font-bold text-xl mb-2">Solution</h2>
+                <p className="leading-relaxed">
+                  Platform pelaporan darurat dan analisis kecurigaan atas suatu media informasi yang diterima/didapatkan dengan bantuan integrasi AI
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+        {/* Kalimat penutup */}
+        <h2 className="text-3xl lg:text-4xl font-thin mt-5 max-[600px]:hidden">
+          Kenali berbagai modus penipuan, pahami indikasinya, dan lindungi
+          dirimu dalam satu platform.
+        </h2>
       </section>
 
       <section

@@ -7,7 +7,7 @@ export default function Navbar() {
   const [showNav, setShowNav] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full h-15 bg-[#F5EFE3] shadow-sm max-[600px]:w-94 font-mono">
+    <header className="fixed top-0 left-0 z-50 w-full h-15 bg-[#F5EFE3] shadow-sm font-mono">
       <div className="flex flex-row items-center h-full justify-between px-5 text-[#4F5B2A] lg:px-20">
         <Link to="/" className="font-bold">
           Muhammad <span className="text-[#B8892D]">Julian</span> Portfolio.

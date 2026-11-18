@@ -15,17 +15,17 @@ export default function CegahScam() {
 
   return (
     <main className="w-full bg-[#F5EFE3] pt-15 font-mono">
-      <section id="hero" className="relative w-full h-125 tracking-normal">
+      <section id="hero" className="relative w-full lg:h-125 tracking-normal">
         <img src={cegahscam} className="w-full h-full object-cover" />
 
         <div className="absolute inset-0 bg-linear-to-r from-black/85 via-black/40 to-black/20 backdrop-blur-sm" />
 
-        <div className="absolute inset-0 flex flex-col items-start justify-end px-20 text-white py-10">
-          <h1 className="text-6xl font-bold">CegahScam</h1>
-          <p className="italic">"Kenali, Pahami, Hadapi"</p>
+        <div className="absolute inset-0 flex flex-col items-start justify-end px-5 lg:px-20 text-white py-10">
+          <h1 className="lg:text-6xl font-bold">CegahScam</h1>
+          <p className="italic max-[600px]:text-xs">"Kenali, Pahami, Hadapi"</p>
           <a
             href="https://github.com/njhbil/CegahScam"
-            className="bg-[#B8892D] px-3 py-2 rounded-lg mt-2 shadow-lg"
+            className="bg-[#B8892D] px-2 py-1 max-[600px]:text-xs lg:px-3 lg:py-2 rounded-lg mt-2 shadow-lg"
           >
             Cek Repository disini
           </a>
@@ -90,7 +90,7 @@ export default function CegahScam() {
 
       <section
         id="desc-role"
-        className="bg-[#4F5B2A] w-full h-145 px-10 lg:px-20 py-16 tracking-normal text-[#F5EFE3]"
+        className="bg-[#4F5B2A] w-full lg:h-145 px-10 lg:px-20 py-16 tracking-normal text-[#F5EFE3]"
       >
         {/* Heading */}
         <div className="mb-8">
@@ -101,18 +101,18 @@ export default function CegahScam() {
         <hr className="border-[#F5EFE3]/40" />
 
         {/* Project Information */}
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 py-8">
+        <div className="grid lg:grid-cols-3 gap-6 py-8">
           <div>
             <p className="text-sm text-[#D8C9A8]">YEAR</p>
             <p className="font-semibold text-lg">2026</p>
           </div>
 
-          <div className="text-center">
+          <div className="lg:text-center">
             <p className="text-sm text-[#D8C9A8]">PROJECT</p>
             <p className="font-semibold text-lg">Massive Project Challenge</p>
           </div>
 
-          <div className="text-end">
+          <div className="lg:text-end">
             <p className="text-sm text-[#D8C9A8]">ROLE</p>
             <p className="font-semibold text-lg">Hacker / Programmer</p>
           </div>
@@ -151,7 +151,7 @@ export default function CegahScam() {
 
       <section
         id="desc-tech"
-        className="bg-[#f5efe3] flex flex-row w-full h-145 px-10 lg:px-20 py-16 tracking-normal text-[#F5EFE3]"
+        className="bg-[#f5efe3] flex flex-col lg:flex-row w-full lg:h-145 px-5 lg:px-20 py-16 tracking-normal text-[#F5EFE3]"
       >
         <div className="w-full">
           <p className="text-[#B8892D]">Technologies</p>
@@ -164,23 +164,23 @@ export default function CegahScam() {
             hingga pengembangan<br></br>fungsionalitas aplikasi.
           </p>
         </div>
-        <div className="grid grid-cols-3 w-full">
-          <div className="bg-[#4f5b2a] w-30 h-30 flex items-center justify-center rounded-md">
+        <div className="grid justify-center lg:grid-cols-3 w-full max-[600px]:gap-3 max-[600px]:mt-10">
+          <div className="bg-[#4f5b2a] w-70 lg:w-30 h-30 flex items-center justify-center rounded-md">
             <img src={figma} className="w-20 h-20" />
           </div>
-          <div className="bg-[#4f5b2a] w-30 h-30 flex items-center justify-center rounded-md">
+          <div className="bg-[#4f5b2a] w-70 lg:w-30 h-30 flex items-center justify-center rounded-md">
             <img src={ts} className="w-20 h-20" />
           </div>
-          <div className="bg-[#4f5b2a] w-30 h-30 flex items-center justify-center rounded-md">
+          <div className="bg-[#4f5b2a] w-70 lg:w-30 h-30 flex items-center justify-center rounded-md">
             <img src={rct} className="w-20 h-20" />
           </div>
-          <div className="bg-[#4f5b2a] w-30 h-30 flex items-center justify-center rounded-md">
+          <div className="bg-[#4f5b2a] w-70 lg:w-30 h-30 flex items-center justify-center rounded-md">
             <img src={tailcss} className="w-20 h-20" />
           </div>
-          <div className="bg-[#4f5b2a] w-30 h-30 flex items-center justify-center rounded-md">
+          <div className="bg-[#4f5b2a] w-70 lg:w-30 h-30 flex items-center justify-center rounded-md">
             <img src={nodejs} className="w-20 h-20" />
           </div>
-          <div className="bg-[#4f5b2a] w-30 h-30 flex items-center justify-center rounded-md">
+          <div className="bg-[#4f5b2a] w-70 lg:w-30 h-30 flex items-center justify-center rounded-md">
             <img src={exjs} className="w-15 h-15" />
           </div>
         </div>

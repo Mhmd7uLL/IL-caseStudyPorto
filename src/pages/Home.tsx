@@ -15,17 +15,17 @@ export default function Home() {
     <main className="w-full bg-[#F5EFE3] pt-15 font-mono">
       <section
         id="home"
-        className="flex flex-row justify-around px-20 h-156 tracking-widest"
+        className="flex flex-row max-[600px]:flex-col justify-around lg:px-20 h-156 tracking-widest"
       >
         <div className="w-full flex items-center justify-center">
-          <img src={selfPhoto} className="w-100 h-100 rounded-full" />
+          <img src={selfPhoto} className="w-70 h-70 lg:w-100 lg:h-100 rounded-full" />
         </div>
         <div className="w-full flex flex-col items-center justify-center">
-          <div className="text-end">
-            <p className="text-3xl font-semibold text-[#4F5B2A]">
+          <div className="text-center lg:text-end">
+            <p className="text-3xl font-bold lg:font-semibold text-[#4F5B2A]">
               Muhammad Julianda Nu'man
             </p>
-            <p className="text-xl font-light text-[#B8892D]">
+            <p className="text-sm lg:text-xl font-light text-[#B8892D]">
               Informatics Engineering Student
             </p>
           </div>
@@ -94,14 +94,14 @@ export default function Home() {
         </article>
       </section>
 
-      <section id="about" className="bg-[#4F5B2A] h-100 w-full px-20 py-20">
+      <section id="about" className="bg-[#4F5B2A] h-100 w-full px-5 py-10 lg:px-20 lg:py-20">
         <div className="flex flex-col">
           <h1 className="text-[#B8892D] font-bold">Tech Stacks</h1>
           <p className="text-[#F5EFE3] text-2xl font-bold">
             What i use to develop
           </p>
         </div>
-        <div className="grid grid-cols-6 gap-2 mt-5">
+        <div className="grid grid-cols-3 lg:grid-cols-6 gap-2 mt-5">
           <div className="bg-[#b8892d] p-5 rounded-md group relative overflow-hidden">
             <img
               src={js}
@@ -162,12 +162,12 @@ export default function Home() {
 
       <section
         id="achievements"
-        className="bg-[#f5efe3] flex flex-row h-100 w-full px-20 py-10 my-10 items-center"
+        className="bg-[#f5efe3] flex flex-col lg:flex-row lg:h-100 w-full px-5 lg:px-20 lg:py-10 my-10 items-center"
       >
-        <div className="w-250">
+        <div className="lg:w-250">
           <div className="flex flex-col">
-            <h1 className="text-[#B8892D] font-bold">Achievements</h1>
-            <p className="text-[#4f5b2a] text-[50px] font-bold">
+            <h1 className="text-[#B8892D] font-bold max-[600px]:text-xs">Achievements</h1>
+            <p className="text-[#4f5b2a] text-4xl lg:text-[50px] font-bold">
               SOME <span className="text-[#B8892D]">ACHIEVEMENTS</span>
               <br></br>I GOT SO FAR.
             </p>
@@ -177,19 +177,19 @@ export default function Home() {
             group competitions
           </p>
         </div>
-        <div className="w-full">
+        <div className="w-full max-[600px]:text-start max-[600px]:mt-10">
           <div className="border-t-[0.5px] border-b-[0.5px] border-[#B8892D] flex flex-row gap-5 py-5 transition-all duration-300 ease-out hover:ps-10">
             <div className="text-[#B8892D] font-bold">2025</div>
             <div>
-              <p className="text-[#4f5b2a] font-bold text-3xl">3rd Place</p>
-              <p>UI/UX Development by INSYFEST - UBP Karawang</p>
+              <p className="text-[#4f5b2a] font-bold text-xl lg:text-3xl">3rd Place</p>
+              <p className="max-[600px]:text-sm">UI/UX Development by INSYFEST - UBP Karawang</p>
             </div>
           </div>
           <div className="border-b-[0.5px] border-[#B8892D] flex flex-row gap-5 py-5 transition-all duration-300 ease-out hover:ps-10">
             <div className="text-[#B8892D] font-bold">2025</div>
             <div>
-              <p className="text-[#4f5b2a] font-bold text-3xl">3rd Place</p>
-              <p>Web Development By SLP - UNESA</p>
+              <p className="text-[#4f5b2a] font-bold text-xl lg:text-3xl">3rd Place</p>
+              <p className="max-[600px]:text-sm">Web Development By SLP - UNESA</p>
             </div>
           </div>
         </div>
@@ -197,15 +197,15 @@ export default function Home() {
 
       <section
         id="projects"
-        className="bg-[#B8892D] min-h-screen w-full px-20 py-20"
+        className="bg-[#B8892D] min-h-screen w-full px-5 py-10 lg:px-20 lg:py-20"
       >
         <div className="flex flex-col">
-          <h1 className="text-[#4f5b2a] font-bold">Featured Projects</h1>
-          <p className="text-[#F5EFE3] text-[50px] font-bold">
-            Projects I've created or currently working on.
+          <h1 className="text-[#4f5b2a] font-bold max-[600px]:text-xs">Featured Projects</h1>
+          <p className="text-[#F5EFE3] text-4xl lg:text-[50px] font-bold">
+            Best of 3 projects I've created as part of the group.
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-2 mt-5">
+        <div className="grid lg:grid-cols-3 gap-2 mt-5">
           <Link
             to="/cegahScam"
             className="group relative w-full overflow-hidden rounded-md"
@@ -248,7 +248,7 @@ export default function Home() {
           </Link>
         </div>
         <Link to="/projects">
-          <p className="w-full text-end mt-5 font-bold text-[#F5efe3] hover:text-[#4f5b2a]">
+          <p className="w-full text-end mt-5 font-bold text-[#F5efe3] max-[600px]:text-sm hover:text-[#4f5b2a]">
             Show more projects
           </p>
         </Link>
